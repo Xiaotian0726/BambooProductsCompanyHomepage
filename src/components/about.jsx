@@ -1,6 +1,10 @@
 import React from "react";
+import { useLanguage } from "../LanguageContext";
 
 export const About = (props) => {
+
+  const { currentLang } = useLanguage(); // 获取当前语言
+
   return (
     <div id="about">
       <div className="container">
@@ -11,9 +15,9 @@ export const About = (props) => {
           </div>
           <div className="col-xs-12 col-md-6">
             <div className="about-text">
-              <h2>关于我们</h2>
+              <h2>{currentLang.About}</h2>
               <p>{props.data ? props.data.paragraph : "loading..."}</p>
-              <h3>为什么选择我们?</h3>
+              <h3>{currentLang.WhyChooseUs}?</h3>
               <div className="list-style">
                 <div className="col-lg-6 col-sm-6 col-xs-12">
                   <ul>

@@ -2,12 +2,17 @@ import { useState } from "react";
 import emailjs from "emailjs-com";
 import React from "react";
 
+import { useLanguage } from "../LanguageContext";
+
 const initialState = {
   name: "",
   email: "",
   message: "",
 };
 export const Contact = (props) => {
+
+  const { currentLang } = useLanguage(); // 获取当前语言
+
   const [{ name, email, message }, setState] = useState(initialState);
 
   const handleChange = (e) => {
@@ -42,10 +47,9 @@ export const Contact = (props) => {
           <div className="col-md-8">
             <div className="row">
               <div className="section-title">
-                <h2>联系我们</h2>
+                <h2>{currentLang.Contact}</h2>
                 <p>
-                  Please fill out the form below to send us an email and we will
-                  get back to you as soon as possible.
+                  {currentLang.ContactGuidelines}
                 </p>
               </div>
               <form name="sentMessage" validate onSubmit={handleSubmit}>
@@ -93,17 +97,17 @@ export const Contact = (props) => {
                 </div>
                 <div id="success"></div>
                 <button type="submit" className="btn btn-custom btn-lg">
-                  Send Message
+                  {currentLang.Send}
                 </button>
               </form>
             </div>
           </div>
           <div className="col-md-3 col-md-offset-1 contact-info">
             <div className="contact-item">
-              <h3>联系方式</h3>
+              <h3>{currentLang.ContactInfo}</h3>
               <p>
                 <span>
-                  <i className="fa fa-map-marker"></i> 地址
+                  <i className="fa fa-map-marker"></i> {currentLang.Address}
                 </span>
                 {props.data ? props.data.address : "loading"}
               </p>
@@ -111,7 +115,7 @@ export const Contact = (props) => {
             <div className="contact-item">
               <p>
                 <span>
-                  <i className="fa fa-phone"></i> 电话
+                  <i className="fa fa-phone"></i> {currentLang.PhoneNumber}
                 </span>{" "}
                 {props.data ? props.data.phone : "loading"}
               </p>
@@ -119,7 +123,7 @@ export const Contact = (props) => {
             <div className="contact-item">
               <p>
                 <span>
-                  <i className="fa fa-envelope-o"></i> 邮箱
+                  <i className="fa fa-envelope-o"></i> {currentLang.Email}
                 </span>{" "}
                 {props.data ? props.data.email : "loading"}
               </p>
@@ -153,7 +157,7 @@ export const Contact = (props) => {
       <div id="footer">
         <div className="container text-center">
           <p>
-            &copy; 2025 浙江XX竹制品有限公司
+            &copy; 2025 {currentLang.CompanyName}
             {/*&copy; 2023 Issaaf Kattan React Land Page Template. Design by{" "}*/}
             {/*<a href="http://www.templatewire.com" rel="nofollow">*/}
             {/*  TemplateWire*/}

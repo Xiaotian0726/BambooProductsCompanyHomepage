@@ -1,12 +1,16 @@
 import { Image } from "./image";
 import React from "react";
+import { useLanguage } from "../LanguageContext";
 
 export const Gallery = (props) => {
+
+  const { currentLang } = useLanguage(); // 获取当前语言
+
   return (
     <div id="portfolio" className="text-center">
       <div className="container">
         <div className="section-title">
-          <h2>产品展示</h2>
+          <h2>{currentLang.Gallery}</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed
             dapibus leonec.

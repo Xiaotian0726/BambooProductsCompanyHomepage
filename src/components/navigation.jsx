@@ -1,6 +1,11 @@
 import React from "react";
+import LanguageSwitcher from '../LanguageSwitcher';
+import { useLanguage } from "../LanguageContext";
 
 export const Navigation = (props) => {
+
+  const { currentLang } = useLanguage(); // 获取当前语言
+
   return (
     <nav id="menu" className="navbar navbar-default navbar-fixed-top">
       <div className="container">
@@ -19,7 +24,7 @@ export const Navigation = (props) => {
           </button>
           <a className="navbar-brand page-scroll" href="#page-top">
             {/*React Landing Page*/}
-            浙江XX竹制品有限公司
+            {currentLang.CompanyName}
           </a>{" "}
         </div>
 
@@ -30,22 +35,22 @@ export const Navigation = (props) => {
           <ul className="nav navbar-nav navbar-right">
             <li>
               <a href="#features" className="page-scroll">
-                公司特色
+                {currentLang.Features}
               </a>
             </li>
             <li>
               <a href="#about" className="page-scroll">
-                关于我们
+                {currentLang.About}
               </a>
             </li>
             <li>
               <a href="#services" className="page-scroll">
-                公司服务
+                {currentLang.Services}
               </a>
             </li>
             <li>
               <a href="#portfolio" className="page-scroll">
-                产品展示
+                {currentLang.Gallery}
               </a>
             </li>
             {/*<li>*/}
@@ -60,8 +65,11 @@ export const Navigation = (props) => {
             {/*</li>*/}
             <li>
               <a href="#contact" className="page-scroll">
-                联系我们
+                {currentLang.Contact}
               </a>
+            </li>
+            <li>
+              <LanguageSwitcher />
             </li>
           </ul>
         </div>

@@ -1,11 +1,15 @@
 import React from "react";
+import { useLanguage } from "../LanguageContext";
 
 export const Services = (props) => {
+
+  const { currentLang } = useLanguage(); // 获取当前语言
+
   return (
     <div id="services" className="text-center">
       <div className="container">
         <div className="section-title">
-          <h2>公司服务</h2>
+          <h2>{currentLang.Services}</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed
             dapibus leonec.

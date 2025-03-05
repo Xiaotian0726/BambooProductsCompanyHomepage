@@ -1,11 +1,16 @@
 import React from "react";
 
+import { useLanguage } from "../LanguageContext";
+
 export const Features = (props) => {
+
+  const { currentLang } = useLanguage(); // 获取当前语言
+
   return (
     <div id="features" className="text-center">
       <div className="container">
         <div className="col-md-10 col-md-offset-1 section-title">
-          <h2>公司特色</h2>
+          <h2>{currentLang.Features}</h2>
         </div>
         <div className="row">
           {props.data

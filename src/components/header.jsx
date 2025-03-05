@@ -1,6 +1,10 @@
 import React from "react";
+import { useLanguage } from "../LanguageContext";
 
 export const Header = (props) => {
+
+  const { currentLang } = useLanguage(); // 获取当前语言
+
   return (
     <header id="header">
       <div className="intro">
@@ -17,7 +21,7 @@ export const Header = (props) => {
                   href="#features"
                   className="btn btn-custom btn-lg page-scroll"
                 >
-                  了解更多
+                  {currentLang.LearnMore}
                 </a>{" "}
               </div>
             </div>
