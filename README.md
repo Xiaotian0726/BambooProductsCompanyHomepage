@@ -10,10 +10,11 @@ npm install
 npm run start
 ```
 
-生产环境打包、启动：
+生产环境打包、后台启动：
 ```
-npm build 
-node /usr/local/bin/serve -s build
+npm run build
+screen
+nohup node /usr/local/bin/serve -s build &
 ```
 
 生产环境：
