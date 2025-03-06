@@ -1,5 +1,9 @@
 # BambooProductsCompanyHomepage
 
+Based on https://github.com/issaafalkattan/React-Landing-Page-Template
+
+## Setup & Deploy
+
 安装依赖：
 ```
 npm install
@@ -22,3 +26,7 @@ nohup node /usr/local/bin/serve -s build &
 # 阿里云一个月试用
 ssh root@120.27.238.27
 ```
+
+## Visit
+
+http://120.27.238.27
