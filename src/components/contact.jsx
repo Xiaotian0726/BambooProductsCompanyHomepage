@@ -27,16 +27,22 @@ export const Contact = (props) => {
     console.log(name, email, message);
     
     {/* replace below with your own Service ID, Template ID and Public Key from your EmailJS account */ }
-    
+
+    const SERVICE_ID = process.env.REACT_APP_EMAIL_JS_SERVICE_ID;
+    const TEMPLATE_ID = process.env.REACT_APP_EMAIL_JS_TEMPLATE_ID;
+    const PUBLIC_KEY = process.env.REACT_APP_EMAIL_JS_PUBLIC_KEY;
+
     emailjs
-      .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", e.target, "YOUR_PUBLIC_KEY")
+      .sendForm(SERVICE_ID, TEMPLATE_ID, e.target, PUBLIC_KEY)
       .then(
         (result) => {
           console.log(result.text);
           clearState();
+          alert(currentLang.SendSuccessTip); // 弹窗提示
         },
         (error) => {
           console.log(error.text);
+          alert(currentLang.SendFailTip); // 弹窗提示
         }
       );
   };

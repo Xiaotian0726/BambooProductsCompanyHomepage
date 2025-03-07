@@ -4,40 +4,42 @@ Based on https://github.com/issaafalkattan/React-Landing-Page-Template
 
 ## Setup & Deploy
 
-Install requirements：
-```
-npm install
-```
+- Clone project, copy `.env.example` to `.env`, then fill the variables.
 
-Local debug：
-```
-npm run start
-```
+- Install requirements：
+    ```
+    npm install
+    ```
 
-Production environment deployment：
-```
-npm run build
-screen
-nohup node /usr/local/bin/serve -s build &
-```
+- Local debug：
+    ```
+    npm run start
+    ```
 
-nginx configuration：
-```
-location / {
-    proxy_pass http://localhost:3000;  # Mapped to port 3000
-    proxy_http_version 1.1;
-    proxy_set_header Upgrade $http_upgrade;
-    proxy_set_header Connection 'upgrade';
-    proxy_set_header Host $host;
-    proxy_cache_bypass $http_upgrade;
-}
-```
+- Production environment deployment：
+    ```
+    npm run build
+    screen
+    nohup node /usr/local/bin/serve -s build &
+    ```
 
-Production environment backups：
-```
-# Aliyun
-ssh root@120.27.238.27
-```
+- nginx configuration：
+    ```
+    location / {
+        proxy_pass http://localhost:3000;  # Mapped to port 3000
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+        proxy_set_header Host $host;
+        proxy_cache_bypass $http_upgrade;
+    }
+    ```
+
+- Production environment backups：
+    ```
+    # Aliyun
+    ssh root@120.27.238.27
+    ```
 
 ## Visit
 

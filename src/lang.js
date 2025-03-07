@@ -60,6 +60,8 @@ export const languages = {
 
         // Contact
         CompanyAddress: 'Zhejiang Province ....',
+        SendSuccessTip: 'Success!',
+        SendFailTip: 'Failed! Please send it manually!',
     },
     zh: {
         // Titles of all level
@@ -121,5 +123,7 @@ export const languages = {
 
         // Contact
         CompanyAddress: '浙江省 ...',
+        SendSuccessTip: '发送成功！',
+        SendFailTip: '发送失败！请尝试手动重新发送邮件！',
     },
 };
