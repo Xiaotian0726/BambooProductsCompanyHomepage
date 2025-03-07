@@ -12,8 +12,9 @@ export const Gallery = (props) => {
         <div className="section-title">
           <h2>{currentLang.Gallery}</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed
-            dapibus leonec.
+            {/*Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed*/}
+            {/*dapibus leonec.*/}
+            {currentLang.GalleryParagraph}
           </p>
         </div>
         <div className="row">

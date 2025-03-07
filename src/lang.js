@@ -28,6 +28,38 @@ export const languages = {
         FeatText3: 'FeatTitle3FeatTitle3 FeatTitle3FeatTitle3 FeatTitle3FeatTitle3 FeatTitle3FeatTitle3 FeatTitle3FeatTitle3',
         FeatTitle4: 'FeatTitle4',
         FeatText4: 'FeatTitle4FeatTitle4 FeatTitle4FeatTitle4 FeatTitle4FeatTitle4 FeatTitle4FeatTitle4 FeatTitle4FeatTitle4',
+
+        // About
+        AboutUsParagraph: 'AboutUsParagraph AboutUsParagraph AboutUsParagraph AboutUsParagraph AboutUsParagraph AboutUsParagraph AboutUsParagraph AboutUsParagraph AboutUsParagraph AboutUsParagraph AboutUsParagraph AboutUsParagraph',
+        ReasonForChooseUs1: 'ReasonForChoose1',
+        ReasonForChooseUs2: 'ReasonForChoose2',
+        ReasonForChooseUs3: 'ReasonForChoose3',
+        ReasonForChooseUs4: 'ReasonForChoose4',
+        ReasonForChooseUs5: 'ReasonForChoose5',
+        ReasonForChooseUs6: 'ReasonForChoose6',
+        ReasonForChooseUs7: 'ReasonForChoose7',
+        ReasonForChooseUs8: 'ReasonForChoose8',
+
+        // Services
+        ServicesParagraph: 'ServicesParagraph ServicesParagraph ServicesParagraph ServicesParagraph ServicesParagraph ServicesParagraph',
+        ServiceName1: 'ServiceName1',
+        ServiceName2: 'ServiceName2',
+        ServiceName3: 'ServiceName3',
+        ServiceName4: 'ServiceName4',
+        ServiceName5: 'ServiceName5',
+        ServiceName6: 'ServiceName6',
+        ServiceText1: 'ServiceText1 ServiceText1 ServiceText1 ServiceText1 ServiceText1',
+        ServiceText2: 'ServiceText2 ServiceText2 ServiceText2 ServiceText2 ServiceText2',
+        ServiceText3: 'ServiceText3 ServiceText3 ServiceText3 ServiceText3 ServiceText3',
+        ServiceText4: 'ServiceText4 ServiceText4 ServiceText4 ServiceText4 ServiceText4',
+        ServiceText5: 'ServiceText5 ServiceText5 ServiceText5 ServiceText5 ServiceText5',
+        ServiceText6: 'ServiceText6 ServiceText6 ServiceText6 ServiceText6 ServiceText6',
+
+        // Gallery
+        GalleryParagraph: 'GalleryParagraph GalleryParagraph GalleryParagraph GalleryParagraph',
+
+        // Contact
+        CompanyAddress: 'Zhejiang Province ....',
     },
     zh: {
         // Titles of all level
@@ -57,5 +89,37 @@ export const languages = {
         FeatText3: '特色3特色3 特色3特色3 特色3特色3 特色3特色3 特色3特色3',
         FeatTitle4: '特色4',
         FeatText4: '特色4特色4 特色4特色4 特色4特色4 特色4特色4 特色4特色4',
+
+        // About
+        AboutUsParagraph: '关于我们 关于我们 关于我们 关于我们 关于我们 关于我们 关于我们 关于我们 关于我们 关于我们 关于我们 关于我们 关于我们 关于我们 关于我们 关于我们 关于我们 关于我们',
+        ReasonForChooseUs1: '选择我们的原因1',
+        ReasonForChooseUs2: '选择我们的原因2',
+        ReasonForChooseUs3: '选择我们的原因3',
+        ReasonForChooseUs4: '选择我们的原因4',
+        ReasonForChooseUs5: '选择我们的原因5',
+        ReasonForChooseUs6: '选择我们的原因6',
+        ReasonForChooseUs7: '选择我们的原因7',
+        ReasonForChooseUs8: '选择我们的原因8',
+
+        // Services
+        ServicesParagraph: '公司服务 公司服务 公司服务 公司服务 公司服务 公司服务 公司服务 公司服务 公司服务 公司服务',
+        ServiceName1: '公司服务1',
+        ServiceName2: '公司服务2',
+        ServiceName3: '公司服务3',
+        ServiceName4: '公司服务4',
+        ServiceName5: '公司服务5',
+        ServiceName6: '公司服务6',
+        ServiceText1: '服务内容1 服务内容1 服务内容1 服务内容1 服务内容1 服务内容1',
+        ServiceText2: '服务内容2 服务内容2 服务内容2 服务内容2 服务内容2 服务内容2',
+        ServiceText3: '服务内容3 服务内容3 服务内容3 服务内容3 服务内容3 服务内容3',
+        ServiceText4: '服务内容4 服务内容4 服务内容4 服务内容4 服务内容4 服务内容4',
+        ServiceText5: '服务内容5 服务内容5 服务内容5 服务内容5 服务内容5 服务内容5',
+        ServiceText6: '服务内容6 服务内容6 服务内容6 服务内容6 服务内容6 服务内容6',
+
+        // Gallery
+        GalleryParagraph: '产品展示 产品展示 产品展示 产品展示 产品展示',
+
+        // Contact
+        CompanyAddress: '浙江省 ...',
     },
 };

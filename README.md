@@ -24,7 +24,7 @@ nohup node /usr/local/bin/serve -s build &
 nginx configuration：
 ```
 location / {
-    proxy_pass http://localhost:3000;  # 映射到本地的 3000 端口
+    proxy_pass http://localhost:3000;  # Mapped to port 3000
     proxy_http_version 1.1;
     proxy_set_header Upgrade $http_upgrade;
     proxy_set_header Connection 'upgrade';

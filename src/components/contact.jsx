@@ -109,7 +109,8 @@ export const Contact = (props) => {
                 <span>
                   <i className="fa fa-map-marker"></i> {currentLang.Address}
                 </span>
-                {props.data ? props.data.address : "loading"}
+                {/*{props.data ? props.data.address : "loading"}*/}
+                {currentLang.CompanyAddress}
               </p>
             </div>
             <div className="contact-item">
