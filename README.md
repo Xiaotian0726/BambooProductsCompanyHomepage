@@ -4,7 +4,7 @@ Based on https://github.com/issaafalkattan/React-Landing-Page-Template
 
 ## Setup & Deploy
 
-- Clone project, copy `.env.example` to `.env`, then fill the variables.
+- Clone project, copy `.env.example` to `.env`, then fill the variables in it.
 
 - Install requirements：
     ```

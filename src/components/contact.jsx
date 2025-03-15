@@ -25,8 +25,6 @@ export const Contact = (props) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(name, email, message);
-    
-    {/* replace below with your own Service ID, Template ID and Public Key from your EmailJS account */ }
 
     const SERVICE_ID = process.env.REACT_APP_EMAIL_JS_SERVICE_ID;
     const TEMPLATE_ID = process.env.REACT_APP_EMAIL_JS_TEMPLATE_ID;
@@ -54,6 +52,11 @@ export const Contact = (props) => {
             <div className="row">
               <div className="section-title">
                 <h2>{currentLang.Contact}</h2>
+
+                <p>
+                  {currentLang.ContactGreetings}
+                </p>
+
                 <p>
                   {currentLang.ContactGuidelines}
                 </p>

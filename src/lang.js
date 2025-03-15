@@ -1,9 +1,10 @@
 // lang.js
 export const languages = {
     en: {
-        // Titles of all level
         greeting: 'Hello',
-        CompanyName: 'Zhejiang XX Company',
+
+        // Titles of all level
+        CompanyName: 'Shaoxing Huike Bamboo Industry',
         Features: 'Features',
         About: 'About',
         Services: 'Services',
@@ -15,11 +16,12 @@ export const languages = {
         Address: 'Address',
         PhoneNumber: 'Phone Number',
         Email: 'Email',
+        ContactGreetings: 'Looking forward to working together with you to create a bright future for bamboo panels!',
         ContactGuidelines: 'Please fill out the form below to send us an email and we will get back to you as soon as possible!',
         Send: 'Send',
 
         // Features
-        HeaderParagraph: 'We are zhejiang XX company We are zhejiang XX company We are zhejiang XX company',
+        HeaderParagraph: 'Crafting high-quality bamboo panels with ingenuity. Exploring the infinite possibilities of bamboo panel materials.',
         FeatTitle1: 'FeatTitle1',
         FeatText1: 'FeatTitle1FeatTitle1 FeatTitle1FeatTitle1 FeatTitle1FeatTitle1 FeatTitle1FeatTitle1 FeatTitle1FeatTitle1',
         FeatTitle2: 'FeatTitle2',
@@ -56,17 +58,19 @@ export const languages = {
         ServiceText6: 'ServiceText6 ServiceText6 ServiceText6 ServiceText6 ServiceText6',
 
         // Gallery
-        GalleryParagraph: 'GalleryParagraph GalleryParagraph GalleryParagraph GalleryParagraph',
+        // GalleryParagraph: 'GalleryParagraph GalleryParagraph GalleryParagraph GalleryParagraph',
+        GalleryParagraph: '',
 
         // Contact
-        CompanyAddress: 'Zhejiang Province ....',
+        CompanyAddress: 'Shicangqiao, Donghe Township, Zhuji City, Shaoxing, Zhejiang Province.',
         SendSuccessTip: 'Success!',
         SendFailTip: 'Failed! Please send it manually!',
     },
     zh: {
-        // Titles of all level
         greeting: '你好',
-        CompanyName: '浙江XX竹制品有限公司',
+
+        // Titles of all level
+        CompanyName: '绍兴惠科竹业有限公司',
         Features: '公司特色',
         About: '关于我们',
         Services: '公司服务',
@@ -78,11 +82,12 @@ export const languages = {
         Address: '地址',
         PhoneNumber: '电话',
         Email: '邮箱',
+        ContactGreetings: '期待与您携手，共同开创竹制板材的美好未来！',
         ContactGuidelines: '请填写下面的表单以发送电子邮件给我们，我们会尽快给您回复！',
         Send: '发送',
 
         // Features
-        HeaderParagraph: '我们是浙江 XX 竹制品有限公司 我们是浙江 XX 竹制品有限公司 我们是浙江 XX 竹制品有限公司',
+        HeaderParagraph: '匠心打造高品质竹制板材 探索竹制板材的无限可能',
         FeatTitle1: '特色1',
         FeatText1: '特色1特色1 特色1特色1 特色1特色1 特色1特色1 特色1特色1',
         FeatTitle2: '特色2',
@@ -119,11 +124,12 @@ export const languages = {
         ServiceText6: '服务内容6 服务内容6 服务内容6 服务内容6 服务内容6 服务内容6',
 
         // Gallery
-        GalleryParagraph: '产品展示 产品展示 产品展示 产品展示 产品展示',
+        // GalleryParagraph: '产品展示 产品展示 产品展示 产品展示 产品展示',
+        GalleryParagraph: '',
 
         // Contact
-        CompanyAddress: '浙江省 ...',
+        CompanyAddress: '浙江省绍兴市诸暨市东和乡石仓桥',
         SendSuccessTip: '发送成功！',
-        SendFailTip: '发送失败！请尝试手动重新发送邮件！',
+        SendFailTip: '发送失败！请尝试手动发送邮件！',
     },
 };
