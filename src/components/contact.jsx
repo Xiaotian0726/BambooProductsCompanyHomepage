@@ -167,7 +167,7 @@ export const Contact = (props) => {
       <div id="footer">
         <div className="container text-center">
           <p>
-            &copy; 2025 {currentLang.CompanyName}
+            &copy; <a href="https://beian.miit.gov.cn" target="_blank">浙ICP备2025159139号</a>
             {/*&copy; 2023 Issaaf Kattan React Land Page Template. Design by{" "}*/}
             {/*<a href="http://www.templatewire.com" rel="nofollow">*/}
             {/*  TemplateWire*/}
