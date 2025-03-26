@@ -42,5 +42,5 @@ Based on https://github.com/issaafalkattan/React-Landing-Page-Template
     ```
 
 ## Visit
-
-http://120.27.238.27
+- http://120.27.238.27
+- http://huikezhuye.com
